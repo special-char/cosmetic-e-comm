@@ -27,8 +27,8 @@ const Banner = ({ data }: BannerPropsType) => {
           )}
         </div>
       </div>
-      <div className={Styles.backgroundBannerImage}>
-        {data.backgroundBannerImage && (
+      {data.backgroundBannerImage && (
+        <div className={Styles.backgroundBannerImage}>
           <Image
             src={data.backgroundBannerImage}
             alt={"Banner Image"}
@@ -36,8 +36,8 @@ const Banner = ({ data }: BannerPropsType) => {
             style={{ objectFit: "contain" }}
             className="z-10"
           />
-        )}
-      </div>
+        </div>
+      )}
     </section>
   );
 };

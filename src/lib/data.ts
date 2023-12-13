@@ -285,7 +285,7 @@ export const products = [
   },
   {
     id: 4,
-    productImage: "",
+    productImage: "/images/product1.png",
     productName: "Ergonomic Chair",
     productPrice: "$43.00",
     productDescription:
@@ -293,7 +293,7 @@ export const products = [
   },
   {
     id: 5,
-    productImage: "",
+    productImage: "/images/product2.png",
     productName: "Ergonomic Chair",
     productPrice: "$43.00",
     productDescription:
@@ -301,7 +301,7 @@ export const products = [
   },
   {
     id: 6,
-    productImage: "",
+    productImage: "/images/product3.png",
     productName: "Ergonomic Chair",
     productPrice: "$43.00",
     productDescription:
@@ -309,7 +309,7 @@ export const products = [
   },
   {
     id: 7,
-    productImage: "",
+    productImage: "/images/product1.png",
     productName: "Ergonomic Chair",
     productPrice: "$43.00",
     productDescription:
@@ -317,7 +317,7 @@ export const products = [
   },
   {
     id: 8,
-    productImage: "",
+    productImage: "/images/product2.png",
     productName: "Ergonomic Chair",
     productPrice: "$43.00",
     productDescription:
@@ -325,7 +325,7 @@ export const products = [
   },
   {
     id: 9,
-    productImage: "",
+    productImage: "/images/product3.png",
     productName: "Ergonomic Chair",
     productPrice: "$43.00",
     productDescription:

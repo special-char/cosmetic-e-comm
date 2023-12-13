@@ -1,5 +1,5 @@
 .gridSection {
-  @apply grid md:grid-cols-[40%_1fr] bg-green grid-cols-1 items-center max-md:justify-items-center select-none;
+  @apply grid md:grid-cols-[40%_1fr] bg-green grid-cols-1 items-center select-none min-h-[20vw];
   & > .contentWrapper {
     @apply flex flex-col gap-4;
 
