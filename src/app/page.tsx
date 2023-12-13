@@ -10,6 +10,9 @@ export default function Home() {
       <Link href={`/cart`}>
         Open cart
       </Link>
+      <button>
+        Open Menu
+      </button>
     </main>
   );
 }
