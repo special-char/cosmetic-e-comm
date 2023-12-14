@@ -2,12 +2,13 @@ import React from "react";
 import { contactDetails } from "@/lib/data";
 import ContactDetail from "@/components/ContactDetail";
 import ContactForm from "@/components/ContactForm";
+import style from "./contact.module.css";
 
 const Contact = () => {
   return (
     <section>
-      <div className="py-12 flex flex-col gap-16 max-w-4xl mx-auto">
-        <div className="flex justify-between flex-wrap gap-4">
+      <div className={style.contactContainer}>
+        <div className={style.contactDetailWrapper}>
           {contactDetails &&
             contactDetails.map((item) => {
               return <ContactDetail key={item.id} data={item} />;

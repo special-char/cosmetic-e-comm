@@ -1,19 +1,16 @@
 import React from "react";
 import Button from "../common/Button";
 import { ContactDetailType } from "@/utils/types";
+import style from "./contactdetail.module.css";
 
 const ContactDetail = ({ data }: ContactDetailType) => {
   const Icon = data.icon;
   return (
-    <div key={data.id} className="flex gap-4 items-center">
-      <Button
-        variant="fill"
-        color="green"
-        className="!rounded-xl !aspect-square !p-4"
-      >
+    <div key={data.id} className={style.contactDetails}>
+      <Button variant="fill" color="green" className={style.icon}>
         <Icon className={"h-4"} />
       </Button>
-      <p className="text-caption1">{data.description}</p>
+      <p className={style.description}>{data.description}</p>
     </div>
   );
 };
