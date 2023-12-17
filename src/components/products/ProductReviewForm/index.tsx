@@ -1,6 +1,6 @@
 import Button from "@/components/common/Button";
-import Input from "@/components/common/form/Input";
-import TextArea from "@/components/common/form/TextArea";
+import Input from "@/components/common/formElements/Input";
+import TextArea from "@/components/common/formElements/TextArea";
 
 type Props = {};
 

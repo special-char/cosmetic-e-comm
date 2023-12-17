@@ -1,5 +1,5 @@
 .btn {
-	@apply px-6 py-3 rounded-full flex justify-center font-semibold items-center gap-2 disabled:bg-gray disabled:text-white whitespace-nowrap;
+	@apply px-6 py-3 rounded-full flex justify-center font-semibold items-center gap-2 disabled:bg-gray/40 disabled:text-white whitespace-nowrap;
 	transition: transform 300ms ease, background-color 300ms ease;
 	transform-style: preserve-3d;
 

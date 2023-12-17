@@ -1,7 +1,7 @@
 import React from "react";
 import { topProduct, products } from "@/lib/data";
 import Button from "@/components/common/Button";
-import ProductCard from "@/components/ProductCard";
+import ProductCard from "@/components/products/ProductCard";
 import Link from "next/link";
 type Props = {};
 

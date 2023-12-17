@@ -1,4 +1,4 @@
-import SignInWith from "@/components/SignInWith";
+import SignInWith from "@/components/auth/SignInWith";
 import RegisterForm from "@/components/auth/register";
 import Button from "@/components/common/Button";
 import Input from "@/components/common/form/Input";
