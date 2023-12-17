@@ -20,10 +20,10 @@ function MobileNav({ data }: MobileNavType) {
   return (
     <>
       <div className={style.mobileNav}>
-        <div className={style.logoWrapper}>
+        <Link href={"/"} className={style.logoWrapper}>
           <h1 className={style.heading1}>{data.heading1}</h1>
           <h1 className={style.heading2}>{data.heading2}</h1>
-        </div>
+        </Link>
 
         <Button variant="icon" title="menu button" onClick={open}>
           <span className="sr-only">open menu button</span>
@@ -58,10 +58,10 @@ function MobileNav({ data }: MobileNavType) {
               <Dialog.Panel className={`no-scrollbar ${style.dialogPanel}`}>
                 <div className={style.container}>
                   <div className={style.menuHeader}>
-                    <div className="flex">
+                    <Link href={"/"} className="flex">
                       <h1 className={style.heading1}>{data.heading1}</h1>
                       <h1 className={style.heading2}>{data.heading2}</h1>
-                    </div>
+                    </Link>
                     <a>
                       <CrossIcon className="h-6 text-white" onClick={close} />
                     </a>
