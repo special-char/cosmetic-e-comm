@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Input from "../common/form/Input";
-import SignInWith from "../SignInWith";
-import SubmitButton from "../common/form/SubmitButton";
+import SubmitButton from "../common/formElements/SubmitButton";
+import SignInWith from "./SignInWith";
+import Input from "../common/formElements/Input";
 
 type Props = {};
 

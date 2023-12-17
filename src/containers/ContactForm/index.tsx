@@ -1,6 +1,6 @@
-import Input from "../../components/common/form/Input";
-import TextArea from "@/components/common/form/TextArea";
-import SubmitButton from "@/components/common/form/SubmitButton";
+import Input from "../../components/common/formElements/Input";
+import TextArea from "@/components/common/formElements/TextArea";
+import SubmitButton from "@/components/common/formElements/SubmitButton";
 import style from "./contactform.module.css";
 
 const ContactForm = () => {

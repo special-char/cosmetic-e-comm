@@ -4,7 +4,7 @@ import ContactDetailCard from "@/components/ContactDetailCard";
 import ContactForm from "@/containers/ContactForm";
 import style from "./contact.module.css";
 
-const Contact = () => {
+const ContactUsSection = () => {
 	return (
 		<section>
 			<div className={style.contactContainer}>
@@ -20,4 +20,4 @@ const Contact = () => {
 	);
 };
 
-export default Contact;
+export default ContactUsSection;

@@ -1,4 +1,4 @@
-import ProductCard from "@/components/ProductCard";
+import ProductCard from "@/components/products/ProductCard";
 import { products } from "@/lib/data";
 import Link from "next/link";
 import React from "react";
