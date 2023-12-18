@@ -56,7 +56,7 @@ const RegisterForm = (props: Props) => {
 						Sign Up
 					</SubmitButton>
 				</form>
-				<div className="flex items-center">
+				{/* <div className="flex items-center">
 					<span className="flex-1">
 						<hr />
 					</span>
@@ -65,7 +65,7 @@ const RegisterForm = (props: Props) => {
 						<hr />
 					</span>
 				</div>
-				<SignInWith />
+				<SignInWith /> */}
 			</div>
 		</div>
 	);
