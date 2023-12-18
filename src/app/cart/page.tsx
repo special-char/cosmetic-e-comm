@@ -1,10 +1,14 @@
+import CounterBtn from "@/components/products/CounterBtn";
 
-type Props = {}
+type Props = {};
 
 const Cart = (props: Props) => {
-  return (
-    <div>Cart</div>
-  )
-}
+	return (
+		<div>
+			Cart
+			<CounterBtn />
+		</div>
+	);
+};
 
-export default Cart
+export default Cart;
