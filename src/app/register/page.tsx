@@ -2,33 +2,33 @@ import React from "react";
 import { FaRegEnvelope } from "react-icons/fa";
 import { MdLockOutline } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
-import Link from "next/link";
 
 interface Props {}
 
 const Register = (props: Props) => {
   return (
     <div>
-      <div className="bg-green-300 w-full h-40 mb-8 py-10">
-        <div className="font-san ml-80">
-          <Link href="/"> Home </Link>
-          <p></p>
+      <div className="bg-yellow-300 w-full h-40 mb-8 py-10 px-8 sm:px-8 md:px-16 lg:px-24 xl:px-56">
+        <div className="font-sans mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32">
+        <p className="flex gap-2"><a href="/Home">Home</a>/<span>Products</span></p>
         </div>
-        <div className="ml-80 mt-4 text-3xl">Account</div>
+        <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32 mt-4 text-3xl">
+          Account
+        </div>
       </div>
-      <div className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center mb-8">
-        <div className="bg-white rounded-2xl shadow-2xl flex w-2/3 max-w-4xl">
-          <div className="w-3/5 p-5">
+      <div className="flex flex-col-reverse items-center justify-center w-full flex-1 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 text-center mb-8">
+        <div className="bg-white rounded-2xl shadow-2xl flex flex-col sm:flex-row w-full sm:w-2/3 max-w-4xl">
+          <div className="w-full sm:w-3/5 p-5">
             <div className="text-left font-bold">
-              <span className="text-green-500">Glossy</span>Labs
+              <span className="text-yellow-300">Glossy</span>Labs
             </div>
             <div className="py-10">
-              <h2 className="text-3xl font-bold text-green-500 mb-2">
+              <h2 className="text-3xl font-bold text-black-500 mb-2">
                 Register Here
               </h2>
 
-              <div className="flex flex-col items-center mt-10">
-                <div className="bg-gray-100 w-64 p-2 flex items-center mb-3">
+              <div className="flex flex-col items-center sm:border-yellow-500 mt-10">
+                <div className="bg-gray-100 w-full sm:w-64 p-2 flex items-center mb-3">
                   <CgProfile className="text-gray-400 m-2" />
                   <input
                     type="text"
@@ -37,7 +37,7 @@ const Register = (props: Props) => {
                     className="bg-gray-100 outline-none text-sm flex-1"
                   />
                 </div>
-                <div className="bg-gray-100 w-64 p-2 flex items-center mb-3">
+                <div className="bg-gray-100 w-full sm:w-64 p-2 flex items-center mb-3">
                   <FaRegEnvelope className="text-gray-400 m-2" />
                   <input
                     type="email"
@@ -46,7 +46,7 @@ const Register = (props: Props) => {
                     className="bg-gray-100 outline-none text-sm flex-1"
                   />
                 </div>
-                <div className="bg-gray-100 w-64 p-2 flex items-center mb-3">
+                <div className="bg-gray-100 w-full sm:w-64 p-2 flex items-center mb-3">
                   <MdLockOutline className="text-gray-400 m-2" />
                   <input
                     type="password"
@@ -55,32 +55,39 @@ const Register = (props: Props) => {
                     className="bg-gray-100 outline-none text-sm flex-1"
                   />
                 </div>
+                <div className="bg-gray-100 w-full sm:w-64 p-2 flex items-center mb-3">
+                  <MdLockOutline className="text-gray-400 m-2" />
+                  <input
+                    type="password"
+                    name="confirmPassword"
+                    placeholder="Confirm Password"
+                    className="bg-gray-100 outline-none text-sm flex-1"
+                  />
+                </div>
 
                 <a
                   href="#"
-                  className="border-2 border-green-500 text-green-500 rounded-full px-12 py-2 inline-block font-semibold hover:bg-green-500 hover:text-white mt-5"
+                  className="border-2 border-black text-black-500 rounded-full px-12 py-2 inline-block font-semibold hover:bg-yellow-500 hover:text-white mt-5"
                 >
                   Submit
                 </a>
               </div>
             </div>
           </div>
-          {/*sign in section */}
 
-          <div className="w-2/5 bg-green-500 text-white rounded-tr-2xl rounded-br-2xl py-36 px-12">
+          <div className="w-full sm:w-2/5 bg-yellow-400 text-black rounded-tr-2xl rounded-br-2xl py-8 px-4 sm:py-36 sm:px-8">
             <h2 className="text-3xl font-bold mb-2">Sign In Here</h2>
             <div className="border-2 w-10 border-white inline-block mb-2"></div>
-            <p className="mb-10">
-              Fill up personal information and start journey with us.
+            <p className="mb-6">
+              Fill up personal information and start the journey with us.
             </p>
             <a
               href="./login"
-              className="border-2 border-white rounded-full px-12 py-2 inline-block font-semibold hover:bg-white hover:text-green-500"
+              className="border-2 border-black rounded-full px-8 py-2 inline-block font-semibold hover:bg-white hover:text-yellow-500"
             >
               Sign In
             </a>
           </div>
-          {/*sign up section */}
         </div>
       </div>
     </div>
