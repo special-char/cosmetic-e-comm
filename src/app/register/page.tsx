@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import Header from '@/components/header/index';
 import { FaRegEnvelope } from "react-icons/fa";
 import { MdLockOutline } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
@@ -8,6 +9,7 @@ interface Props {}
 const Register = (props: Props) => {
   return (
     <div>
+      <Header />
       <div className="bg-yellow-300 w-full h-40 mb-8 py-10 px-8 sm:px-8 md:px-16 lg:px-24 xl:px-56">
         <div className="font-sans mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32">
         <p className="flex gap-2"><a href="/Home">Home</a>/<span>Products</span></p>

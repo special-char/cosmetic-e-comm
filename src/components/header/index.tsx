@@ -11,7 +11,9 @@ import { CgClose } from "react-icons/cg";
 import Image from "next/image";
 import clsx from "clsx";
 
-export default function Header() {
+interface Props {}
+
+const Header = (props: Props) => {
   const [isSideMenuOpen, setMenu] = useState(false);
 
   const navlinks = [
@@ -27,17 +29,17 @@ export default function Header() {
       labe: "Shop",
       link: "/Shop",
     },
-    {
-      labe: "Pages",
-      link: "#",
-    },
-    {
-      labe: "Blog",
-      link: "#",
-    },
+    // {
+    //   labe: "Pages",
+    //   link: "#",
+    // },
+    // {
+    //   labe: "Blog",
+    //   link: "#",
+    // },
     {
       labe: "Contact",
-      link: "#",
+      link: "/Contact",
     },
   ];
 
@@ -56,17 +58,17 @@ export default function Header() {
               <Image src={LogoImg} alt="logo" width={100} height={100} />
             </Link>
           </section>
-          
+        </div>
+        <div className="flex flex-wrap gap-8 justify-center">
           {navlinks.map((d, i) => (
             <Link
               key={i}
-              className="hidden lg:block  text-gray-500 hover:text-black"
+              className="hidden lg:block text-gray-500 hover:text-blue-200"
               href={d.link}
             >
               {d.labe}
             </Link>
           ))}
-          
         </div>
 
         {/* sidebar mobile menu */}
@@ -106,8 +108,8 @@ export default function Header() {
           </Link>
         </section>
       </nav>
-      <hr className=" " />
     </main>
   );
 }
 
+export default Header;
