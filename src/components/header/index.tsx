@@ -19,7 +19,7 @@ const Header = (props: Props) => {
   const navlinks = [
     {
       labe: "Home",
-      link: "/Home",
+      link: "/",
     },
     {
       labe: "About",
@@ -29,14 +29,14 @@ const Header = (props: Props) => {
       labe: "Shop",
       link: "/Shop",
     },
-    // {
-    //   labe: "Pages",
-    //   link: "#",
-    // },
-    // {
-    //   labe: "Blog",
-    //   link: "#",
-    // },
+    {
+      labe: "Pages",
+      link: "#",
+    },
+    {
+      labe: "Blog",
+      link: "#",
+    },
     {
       labe: "Contact",
       link: "/Contact",
