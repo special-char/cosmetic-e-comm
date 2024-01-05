@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import LogoImg from "/public/images/logo.jpg";
-
 import { TbMenuDeep } from "react-icons/tb";
 import { CiSearch } from "react-icons/ci";
 import { FaOpencart } from "react-icons/fa6";
@@ -10,6 +9,7 @@ import { VscAccount } from "react-icons/vsc";
 import { CgClose } from "react-icons/cg";
 import Image from "next/image";
 import clsx from "clsx";
+
 
 interface Props {}
 
@@ -19,7 +19,7 @@ const Homenav = (props: Props) => {
   const navlinks = [
     {
       labe: "Home",
-      link: "/Home",
+      link: "/",
     },
     {
       labe: "About",
@@ -29,14 +29,14 @@ const Homenav = (props: Props) => {
       labe: "Shop",
       link: "/Shop",
     },
-    // {
-    //   labe: "Pages",
-    //   link: "#",
-    // },
-    // {
-    //   labe: "Blog",
-    //   link: "#",
-    // },
+    {
+      labe: "Pages",
+      link: "#",
+    },
+    {
+      labe: "Blog",
+      link: "#",
+    },
     {
       labe: "Contact",
       link: "/Contact",
@@ -92,24 +92,21 @@ const Homenav = (props: Props) => {
           </section>
         </div>
 
-        
-          {/* last section */}
-          <section className="flex items-center gap-4">
-            {/* search icon */}
-            <Link href={"#"}>
-              <CiSearch className="text-2xl cursor-pointer" />
-            </Link>
-            {/* cart icon */}
-            <Link href={"#"}>
-              <FaOpencart className="text-2xl cursor-pointer" />
-            </Link>
-            {/* account icon */}
-            <Link href={"/login"}>
-              <VscAccount className="text-2xl cursor-pointer" />
-            </Link>
-          </section>
-        
-
+        {/* last section */}
+        <section className="flex items-center gap-4">
+          {/* search icon */}
+          <Link href={"#"}>
+            <CiSearch className="text-2xl cursor-pointer" />
+          </Link>
+          {/* cart icon */}
+          <Link href={"#"}>
+            <FaOpencart className="text-2xl cursor-pointer" />
+          </Link>
+          {/* account icon */}
+          <Link href={"/login"}>
+            <VscAccount className="text-2xl cursor-pointer" />
+          </Link>
+        </section>
       </nav>
     </main>
   );
